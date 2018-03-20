@@ -1,0 +1,7 @@
+<h1>The LACKP Homepage</h1>
+
+<ul>
+<% @team_list.each do |team_name| %>
+  <li><a href="/team/<%= team_name.gsub(" ","_") %>"><%= team_name %></a></li>
+    <% end %>
+</ul>

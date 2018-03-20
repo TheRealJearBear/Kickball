@@ -1,0 +1,8 @@
+<h1><%= @entry.name %></h1>
+<ul>
+  <% @entry_players.each do |player| %>
+    <li><%= "#{player.position} - #{player.name}" %></li>
+  <% end %>
+</ul>
+
+<a href="/">Back to teams</a>
